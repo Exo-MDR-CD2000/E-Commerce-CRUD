@@ -30,11 +30,17 @@ router.get('/:id', async (req, res) => {
   } catch (err) {
     res.status(500).json(err);
   }
-});
+}); // working!
 
-router.post('/', (req, res) => {
+router.post('/', async (req, res) => {
   // create a new category
-});
+  try {
+    const categoryData = await Category.create(req.body); // req.body is the data from the client
+    res.status(200).json(categoryData);
+  } catch (err) {
+    res.status(400).json(err);
+  }
+}); // working!
 
 router.put('/:id', (req, res) => {
   // update a category by its `id` value
