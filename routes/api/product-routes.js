@@ -77,7 +77,7 @@ router.post('/', (req, res) => {
       console.log(err);
       res.status(400).json(err);
     });
-});
+}); // refractor code above to use async/await
 
 // update product
 router.put('/:id', (req, res) => {
@@ -122,7 +122,7 @@ router.put('/:id', (req, res) => {
       // console.log(err);
       res.status(400).json(err);
     });
-});
+}); // refractor code above to use async/await
 
 router.delete('/:id', (req, res) => {
   // delete one product by its `id` value
