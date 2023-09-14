@@ -10,8 +10,8 @@ router.get('/', async (req, res) => {
   try {
     const productData = await Product.findAll({
       include: [
-        { model: Category }, // this works
-        { model: Tag } // this doesn't work
+        { model: Category }, 
+        { model: Tag, as: 'product_has_tag(s)' } // I realized that I had to reference the alias that I defined in the index.js file in the models folder
       ]
     }).catch((err) => {
       console.log(err);
