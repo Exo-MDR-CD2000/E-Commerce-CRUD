@@ -2,7 +2,7 @@
 Using Sequelize to ensure CRUD operations for an e-comemrce back end.
 
 ## Description
-The task was to develop the backend for an e-commerce site using sequelize. The entire code was provided and only the models and api routes were altered to make it functional. The models for category, products, product tags, tags were developed and then routes were developed/altered to make the database functional via insomnia.
+The task was to develop the backend for an e-commerce site using sequelize. The entire code was provided and only the models and api routes were altered to make it functional. The models for category, products, product tags, tags were developed/altered and then routes were developed/altered to make the database functional via insomnia.
 ## Installation
 Change the env variables first in the .env file. Only change the password to match your local mysql password. This is assuming the username is 'root'. Install the required npm packages using 'npm i' via terminal. Enter mysql and source the schema.sql file in the db folder. Also run 'node seeds/index.js' to populate the database with some example data. Please also have insomnia installed or similar equivalence to test the routes. Once everything above has been done, start the server by typing 'npm start' in terminal.
 
