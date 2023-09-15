@@ -6,6 +6,8 @@ The task was to develop the backend for an e-commerce site using sequelize. The 
 ## Installation
 Change the env variables first in the .env file. Only change the password to match your local mysql password. This is assuming the username is 'root'. Install the required npm packages using 'npm i' via terminal. Enter mysql and source the schema.sql file in the db folder. Also run 'node seeds/index.js' to populate the database with some example data. Please also have insomnia installed or similar equivalence to test the routes. Once everything above has been done, start the server by typing 'npm start' in terminal.
 
+[Install Tutorial](https://drive.google.com/file/d/1PfQNLZ26wsWKJnbyxQwk9XFUHJtalZgS/view)
+
 ## Usage
 There are three main models with seperate routes for each. Each route can be tested within insomnia. Enter in the provided localhost urls to test the routes.
 
